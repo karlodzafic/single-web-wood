@@ -100,6 +100,91 @@ footer {
   width: 100%;
   border-radius: 10px;
 }
+
 html {
   scroll-behavior: smooth; /* Omogućuje glatko skrolanje */
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Dodaje efekt glatke promjene veličine */
+}
+
+.about img:hover {
+  transform: scale(
+    1.1
+  ); /* Povećava sliku za 10% kad se mišem prijeđe preko nje */
+}
+
+/* Novi stilovi za "O Nama" dizajn */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.about-text,
+.about-quote,
+.about-info {
+  flex: 1;
+  max-width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-text h2 {
+  color: #8b5e3c;
+}
+
+.about-text p {
+  color: #593d29;
+  line-height: 1.6;
+}
+
+.about-quote {
+  text-align: center;
+  background-color: #593d29;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-quote .quote {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.about-info img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+}
+
+.about-info p {
+  text-align: center;
+  color: #8b5e3c;
+  margin-bottom: 20px;
+}
+
+.about-info ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.about-info ul li {
+  margin: 10px 0;
+  color: #593d29;
 }

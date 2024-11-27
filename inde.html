@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirisne Svijeće - Ručno Rađene</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <!-- JavaScript CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Mirisne Svijeće</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Hero</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#o-nama">O nama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proizvodi">Proizvodi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proces">Kako radimo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galerija">Radovi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fun-facts">Zabavne činjenice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partneri">Partneri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Sekcija -->
+    <header
+      id="hero"
+      class="text-center text-white d-flex align-items-center justify-content-center"
+      style="
+        height: 100vh;
+        background: url('./images/hero.jpg') center/cover no-repeat;
+      "
+    >
+      <div>
+        <h1 class="hero-title">Unesi svjetlost u svoj svijet.</h1>
+        <p class="hero-subtitle">
+          Ručne, personalizirane svijeće za svaku priliku.
+        </p>
+        <a href="#proizvodi" class="btn hero-btn">Izradi svoju svijeću</a>
+      </div>
+    </header>
+
+    <!-- Kratki Uvod -->
+    <section id="header" class="py-4 text-center bg-light">
+      <p class="lead">
+        Personalizacija svijeća nikada nije bila jednostavnija.
+      </p>
+    </section>
+
+    <!-- O nama -->
+    <section id="o-nama" class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Tko smo mi?</h2>
+        <p>
+          Strastveni smo u stvaranju unikatnih mirisnih svijeća koristeći
+          prirodne materijale i ručni rad. Naša inspiracija dolazi iz ljubavi
+          prema detaljima i prirodi.
+        </p>
+        <img src="./images/team.jpg" alt="Tim" class="img-fluid rounded" />
+      </div>
+    </section>
+
+    <!-- Proizvodi -->
+    <section id="proizvodi" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Naše kreacije</h2>
+        <div class="row mb-4" id="productGrid">
+          <!-- Prva tri proizvoda (uvijek prikazani) -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/proizvodi/proizvod1.jpg"
+                class="card-img-top"
+                alt="Lavanda svijeća"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Miris lavande</h5>
+                <p class="card-text">Opustite se uz umirujući miris lavande.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/proizvodi/proizvod2.jpg"
+                class="card-img-top"
+                alt="Vanilija svijeća"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Miris vanilije</h5>
+                <p class="card-text">
+                  Slatki i topli miris vanilije za vaš prostor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/proizvodi/proizvod3.jpg"
+                class="card-img-top"
+                alt="Citrus svijeća"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Citrus energija</h5>
+                <p class="card-text">
+                  Razbudite osjetila svježim citrusnim mirisima.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Skriveni proizvodi (prikazuju se nakon klika na "Pogledaj sve") -->
+        <div class="row mb-4 d-none" id="hiddenProducts">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/proizvodi/proizvod4.jpg"
+                class="card-img-top"
+                alt="Specijalna svijeća"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Specijalna kolekcija</h5>
+                <p class="card-text">Unikatne svijeće za posebne prilike.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/proizvodi/proizvod5.jpg"
+                class="card-img-top"
+                alt="Božićna svijeća"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Božićna kolekcija</h5>
+                <p class="card-text">Svijeće s mirisima zime i blagdana.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CTA gumb -->
+        <button
+          class="btn btn-primary mt-4"
+          id="viewMoreBtn"
+          onclick="toggleProducts()"
+        >
+          Pogledaj sve
+        </button>
+      </div>
+    </section>
+
+    <!-- Kako radimo -->
+    <section id="proces" class="py-5 text-center bg-white">
+      <div class="container">
+        <h2 class="mb-4">Kako nastaju naše svijeće?</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="bi bi-gem fs-1"></i>
+            <h5>1. Odabir dizajna</h5>
+            <p>Izaberite oblik, miris i boju svijeće.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-paint-bucket fs-1"></i>
+            <h5>2. Personalizacija</h5>
+            <p>Dodajte detalje poput teksta ili simbola.</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-truck fs-1"></i>
+            <h5>3. Dostava</h5>
+            <p>Mi izrađujemo i dostavljamo svijeću vama.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerija" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Naši radovi</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="./images/galerija/rad1.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Rad 1"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./images/galerija/rad2.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Rad 2"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./images/galerija/rad3.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Rad 3"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImage(this.src)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Pregled slike</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src=""
+                id="modalImage"
+                class="img-fluid rounded"
+                alt="Pregled slike"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zabavne činjenice -->
+    <section id="fun-facts" class="py-5 bg-white text-center">
+      <div class="container">
+        <h2 class="mb-4">Jeste li znali?</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <i class="bi bi-droplet fs-1 text-primary"></i>
+            <h5>Prirodni vosak</h5>
+            <p>100% prirodni vosak.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-people fs-1 text-success"></i>
+            <h5>Zadovoljni klijenti</h5>
+            <p>Preko 500 zadovoljnih klijenata.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-flower2 fs-1 text-warning"></i>
+            <h5>Lavanda miris</h5>
+            <p>Najpopularniji miris: Lavanda.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-clock fs-1 text-danger"></i>
+            <h5>Vrijeme izrade</h5>
+            <p>Svaka svijeća izrađena za manje od 48 sati.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partneri -->
+    <section id="partneri" class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="mb-4">Naši partneri</h2>
+        <p>Ponosni smo na suradnju s ovim brendovima:</p>
+        <div class="d-flex justify-content-center">
+          <img
+            src="./images/partneri/partner1.jpg"
+            alt="Partner 1"
+            class="mx-3"
+          />
+          <img
+            src="./images/partneri/partner2.jpg"
+            alt="Partner 2"
+            class="mx-3"
+          />
+          <img
+            src="./images/partneri/partner3.jpg"
+            alt="Partner 3"
+            class="mx-3"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Javite nam se!</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Vaše ime" />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Vaša e-pošta"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Vaša poruka"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Pošalji poruku</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 text-center">
+      <p>&copy; 2024 Mirisne Svijeće. Sva prava pridržana.</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showImage(src) {
+        document.getElementById("modalImage").src = src;
+      }
+    </script>
+    <script>
+      function toggleProducts() {
+        const hiddenProducts = document.getElementById("hiddenProducts");
+        const viewMoreBtn = document.getElementById("viewMoreBtn");
+
+        if (hiddenProducts.classList.contains("d-none")) {
+          // Prikazivanje skrivenih proizvoda
+          hiddenProducts.classList.remove("d-none");
+          viewMoreBtn.textContent = "Prikaži manje";
+        } else {
+          // Sakrivanje proizvoda
+          hiddenProducts.classList.add("d-none");
+          viewMoreBtn.textContent = "Pogledaj sve";
+        }
+      }
+    </script>
+  </body>
+</html>

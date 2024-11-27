@@ -1,0 +1,104 @@
+body {
+  background-color: #f8f5f2; /* Neutralna boja */
+  font-family: "Open Sans", sans-serif;
+  color: #5c4b3d; /* Smeđkasta nijansa za tekst */
+}
+
+h1,
+h2,
+h5 {
+  font-family: "Playfair Display", serif;
+  color: #5c4b3d;
+}
+
+.btn-primary {
+  background-color: #d4c1a3; /* Ton breskve */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #c7ad92; /* Tamnija nijansa breskve */
+}
+
+.card {
+  border: 1px solid #d4c1a3; /* Tanki okvir */
+  background-color: #ffffff;
+}
+
+.card-title {
+  color: #5c4b3d;
+}
+
+/* Navbar stilovi */
+.navbar {
+  background-color: #d4c1a3; /* Ton breskve */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blaga sjena */
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  color: #5c4b3d !important; /* Smeđkasta nijansa za brend */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #5c4b3d !important; /* Smeđkasta nijansa za linkove */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #c7ad92; /* Tamnija nijansa breskve na hover */
+  color: #ffffff !important; /* Bijeli tekst na hover */
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  border-color: #5c4b3d; /* Smeđa boja za gumb */
+}
+
+.navbar-toggler-icon {
+  background-color: #5c4b3d; /* Smeđkasta nijansa za ikonu */
+  border-radius: 2px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end; /* Linkovi desno */
+}
+/* Hero naslov */
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem; /* Povećava veličinu naslova */
+  font-weight: bold; /* Podebljava naslov */
+  color: #ffffff; /* Bijela boja za bolji kontrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dodaje sjenu za bolju vidljivost */
+}
+
+/* Hero podnaslov */
+.hero-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem; /* Smanjuje veličinu podnaslova */
+  color: #ffffff; /* Bijela boja */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Blaga sjena */
+  margin-bottom: 1rem;
+}
+
+/* Hero gumb */
+.hero-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem; /* Smanjuje veličinu teksta na gumbu */
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #d4c1a3; /* Ton breskve */
+  border: none;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase; /* Sva slova velika */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Blaga sjena za gumb */
+}
+
+.hero-btn:hover {
+  background-color: #c7ad92; /* Tamnija nijansa na hover */
+  color: #ffffff;
+}
